@@ -1,0 +1,5 @@
+{
+  "name": "The Architect's Dashboard",
+  "description": "A Progressive Web Application designed to digitize and systematize teacher observations at Broadway Nursery & Primary School, Uganda. It provides a structured framework for observations, works offline, and generates instant reports to drive continuous improvement.",
+  "requestFramePermissions": []
+}

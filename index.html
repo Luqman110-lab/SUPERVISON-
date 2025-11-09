@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Architect's Dashboard</title>
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#1e40af" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#1e40af', // blue-700
+                dark: '#1e3a8a',    // blue-800
+                light: '#3b82f6',   // blue-500
+                subtle: '#eff6ff',  // blue-50
+              },
+              success: '#10b981', // emerald-500
+              warning: '#f59e0b', // amber-500
+              danger: '#dc2626', // red-600
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: 0 },
+                '100%': { opacity: 1 },
+              }
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-in-out',
+            }
+          },
+        },
+      }
+    </script>
+    <script src="https://unpkg.com/recharts/umd/Recharts.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "jspdf": "https://aistudiocdn.com/jspdf@^3.0.3",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.3.0",
+    "lodash/": "https://aistudiocdn.com/lodash@^4.17.21/",
+    "jspdf-autotable": "https://aistudiocdn.com/jspdf-autotable@^5.0.2",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-100">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
